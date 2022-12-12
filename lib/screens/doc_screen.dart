@@ -77,7 +77,7 @@ class _DocScreenState extends State<DocScreen> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: AppTheme.primary,
-          title: const Text("Reportes"),
+          title: const Text("Documentos"),
         ),
         bottomNavigationBar: BottomNavigationBar(
             onTap: (index) {
@@ -92,12 +92,12 @@ class _DocScreenState extends State<DocScreen> {
             iconSize: 30,
             items: const [
               BottomNavigationBarItem(
-                icon: Icon(Icons.download),
-                label: 'Documentos',
+                icon: Icon(Icons.file_copy_rounded),
+                label: 'Materiales',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.upload_file),
-                label: 'Importar',
+                label: 'Mis Documentos',
               ),
             ]),
         body: _paginaActual == 0
@@ -127,6 +127,10 @@ class DocEstudiante extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Mis Documentos"),
+        automaticallyImplyLeading: false,
+      ),
       body: ListView.builder(
         itemCount: documentos.length,
         itemBuilder: (BuildContext context, int index) {
@@ -141,7 +145,7 @@ class DocEstudiante extends StatelessWidget {
                   onPressed: () => openFile(
                       url: documentos[index]['url'],
                       fileName: (documentos[index]['nombre']) + ".pdf"),
-                  icon: Icon(Icons.download)),
+                  icon: Icon(Icons.remove_red_eye)),
             ),
           );
         },
@@ -157,6 +161,10 @@ class DocDescargar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Materiales"),
+        automaticallyImplyLeading: false,
+      ),
       body: ListView.builder(
         itemCount: documentos.length,
         itemBuilder: (BuildContext context, int index) {
@@ -171,7 +179,7 @@ class DocDescargar extends StatelessWidget {
                   onPressed: () => openFile(
                       url: documentos[index]['url'],
                       fileName: (documentos[index]['nombre']) + ".pdf"),
-                  icon: Icon(Icons.download)),
+                  icon: Icon(Icons.remove_red_eye)),
             ),
           );
         },
