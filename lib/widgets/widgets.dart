@@ -1,0 +1,9 @@
+export 'package:aplicacion_movil/screens/screens.dart';
+export 'package:aplicacion_movil/widgets/custom_avatar.dart';
+export 'package:aplicacion_movil/widgets/custom_botton_menu.dart';
+export 'package:aplicacion_movil/widgets/custom_card_type_1.dart';
+export 'package:aplicacion_movil/widgets/custom_card_tyype_2.dart';
+export 'package:aplicacion_movil/widgets/custom_input_field.dart';
+export 'package:aplicacion_movil/widgets/auth_background.dart';
+export 'package:aplicacion_movil/widgets/card_container.dart';
+export 'package:aplicacion_movil/widgets/custom_body.dart';

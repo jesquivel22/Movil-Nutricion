@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "115946594164",
+    "project_id": "archivos-nutricion",
+    "storage_bucket": "archivos-nutricion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115946594164:android:4807744022f71cd4a4d621",
+        "android_client_info": {
+          "package_name": "com.example.aplicacion_movil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115946594164-a9ae49i8dqpj9pteoh4mhancg0fngd0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFG7LRZYna_A6pMPefbGTDsEvEuXEdgJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115946594164-a9ae49i8dqpj9pteoh4mhancg0fngd0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
